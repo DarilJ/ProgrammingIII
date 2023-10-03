@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 944ff2dc49dca1947b2ddd1c47b15dbf, type: 3}
   m_Name: myCharacter
   m_EditorClassIdentifier: 
-  healthPoints: 0
   speed: 5
   healthBar: {fileID: 0}
   maxHealth: 100
-  currentHealth: 10
+  currentHealth: 41.017967
+  damage: 10
+  heal: 10

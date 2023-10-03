@@ -7,9 +7,10 @@ using UnityEngine.UI;
 
 public class CharacterBase : ScriptableObject
 {
-    public float healthPoints;
     public float speed;
     public Slider healthBar;
     public float maxHealth;
-    public float currentHealth = 100f;
+    public float currentHealth;
+    public float damage;
+    public float heal;
 }

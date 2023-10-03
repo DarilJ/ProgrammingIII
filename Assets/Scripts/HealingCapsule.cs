@@ -5,10 +5,6 @@ public class HealingUnit : MonoBehaviour
 {
     public CharacterBase myCharacter;
 
-    public float healthPoints;
-    public float maxHealth;
-    public float currentHealth;
-
     public Transform player; // Referência ao jogador
     public Transform baseLocation; // Referência à base
 
@@ -22,10 +18,6 @@ public class HealingUnit : MonoBehaviour
 
     private void Start()
     {
-        healthPoints = myCharacter.healthPoints;
-        maxHealth = myCharacter.maxHealth;
-        currentHealth = myCharacter.currentHealth;
-
         StartCoroutine(HealingRoutine());
     }
 
@@ -46,7 +38,7 @@ public class HealingUnit : MonoBehaviour
                 StartCoroutine(RechargeRoutine());
             }
         }
-        if (currentHealth <= 33)
+        if (myCharacter.currentHealth <= 33)
         {
             // Cura o jogador
             myCharacter.currentHealth += healAmount;
